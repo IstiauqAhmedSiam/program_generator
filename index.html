@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Generate Program</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./assets/css/jsuites.css" type="text/css" />
+    <script src="./assets/js/jsuites.js"></script>
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/typography.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="dialog dialog_project_create d-flex justify-center flex-column">
+        <span>Are you sure you want to create a new project?</span>
+        <div class="d-flex justify-space-between align-center" style="margin-top: 30px">
+            <button class="acceptBtn cursor-pointer">Yes</button>
+            <button class="dangerBtn cancelBtn cursor-pointer">Cancel</button>
+        </div>
+    </div>
+
+    <div class="dialog dialog_new_project_details d-flex justify-center flex-column">
+        <h2>
+            <center>New Program</center>
+        </h2>
+        <input id='calendar' />
+        <button class="projectCreateBtn cursor-pointer">Create</button>
+        </div>
+    </div>
+
+    <div class="sticky_options_wrapper d-flex flex-column align-center justify-center">
+        <div class="d-flex flex-column align-center">
+            <button class="cursor-pointer printBtn">Print</button>
+            <button class="cursor-pointer customizeBtn">Edit</button>
+        </div>
+
+        <div class="toggleBtn d-flex align-center justify-center cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="25" fill="#fff"><path d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"></path></svg>
+        </div>
+    </div>
+
+    <div class="customizeBar_wrapper sidebar-openn">
+        <div class="customize_titleBar d-flex align-center justify-space-between">
+            <div class="left_side d-flex align-center">
+                <svg class="cursor-pointer closeBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"></path></svg>
+                <h2 style="font-family: Arial;margin-left: 10px;font-size: 23px;">Customize</h2>
+            </div>
+
+            <div class="right_side">
+                <button class="cursor-pointer createNewBtn">Create New</button>
+            </div>
+        </div>
+
+        <div class="customize_contentEdit_wrapper">
+            <div class="section">
+                <div class="section_title">প্রোগ্রামের তথ্য</div>
+                <div class="section_content">
+                    <div class="single_field d-flex flex-column">
+                        <span class="field_name">মাসের নাম</span>
+                        <input type="text" class="field" data-target="monthName" disabled>
+                    </div>
+                    <div class="single_field d-flex flex-column">
+                        <span class="field_name">সন</span>
+                        <input type="text" class="field" data-target="year" disabled>
+                    </div>
+                    <div class="single_field d-flex flex-column">
+                        <span class="field_name">স্বাক্ষরের তারিখ</span>
+                        <input type="text" class="field signatureField" data-target="signatureDate">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section_title">প্রোগ্রাম কর্মসূচি</div>
+                <div class="section_content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="printArea">
+        <div class="page">
+            <div class="program_headline d-flex flex-column justify-center align-center">
+                <span class="bn">বাড়ি পরিদর্শনের মাসিক অগ্রিম কর্মসূচী</span>
+                <span class="bn">সহ:স্বাস্থ্য পরিদর্শক কর্তৃক পূরনীয়</span>
+            </div>
+
+            <div class="program_author_details">
+                <table>
+                    <tr>
+                        <td>
+                            <b>মাসের নামঃ</b> 
+                            <span data-target="monthName"></span>
+                        </td>
+                        <td><b>সহ:স্বাস্থ্য পরিদর্শকের নাম:</b> মোসা: সানজিদা আক্তার</td>
+                        <td><b>পদবী:</b> A.H.I</td>
+                        <td>
+                            <b>সন:</b>
+                            <span data-target="year"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>ইউনিয়ন:</b> মো: পুর প:</td>
+                        <td><b>উপজেলা:</b> দাউদকান্দি</td>
+                        <td><b>জেলা:</b> কুমিল্লা।</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="program_schedule">
+                <table>
+                    <tr>
+                        <th>তারিখ</th>
+                        <th>ইউনিয়ন</th>
+                        <th>ওয়ার্ড নং</th>
+                        <th>গ্রাম/পাড়ার নাম</th>
+                        <th>ই.পি.আই টিকাদান কেন্দ্রের নাম/কমিউনিটি ক্লিনিকের নাম</th>
+                        <th>ব্লক</th>
+                        <th>মন্তব্য</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="program_signatures">
+                <table>
+                    <tr>
+                        <td>প্রস্তুতকারীর স্বাক্ষর</td>
+                        <td>স্বাক্ষর</td>
+                        <td>স্বাক্ষর</td>
+                    </tr>
+                    <tr>
+                        <td>সহ:স্বাস্থ্য পরির্দ্শক</td>
+                        <td>স্বাস্থ্য পরির্দ্শক</td>
+                        <td>অনুমোদনকারী কর্মকর্তা</td>
+                    </tr>
+                    <tr>
+                        <td>তারিখ: <span data-target="signatureDate"></span></span></td>
+                        <td>তারিখ: <span data-target="signatureDate"></span></span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>মোবাইল:০১৮১৬৪৭৬২০১</td>
+                        <td>মোবাইল: ০১৮১৮৬৬৭১৪৪</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
