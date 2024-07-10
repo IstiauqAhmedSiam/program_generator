@@ -5,7 +5,7 @@
     "description": "Generate Program with some easy customization",
     "background_color": "#314399",
     "theme_color": "#314399",
-    "start_url": "/",
+    "start_url": "/program_generator",
     "display": "standalone",
     "scope": "/",
     "icons": [
