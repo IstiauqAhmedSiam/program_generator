@@ -1,0 +1,40 @@
+{
+    "id": "/?v=1.0.0",
+    "short_name": "Program Generator",
+    "name": "Program Generator",
+    "description": "Generate Program with some easy customization",
+    "background_color": "#314399",
+    "theme_color": "#314399",
+    "start_url": "/",
+    "display": "standalone",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/assets/img/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/img/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "shortcuts": [
+      
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/img/Screenshot_1.png",
+        "type": "image/png",
+        "sizes": "831x500",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/assets/img/Screenshot_2.png",
+        "type": "image/png",
+        "sizes": "287x608",
+        "form_factor": "wide"
+      }
+    ]
+  }
