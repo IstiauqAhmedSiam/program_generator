@@ -10,12 +10,12 @@
     "scope": "/",
     "icons": [
       {
-        "src": "/assets/img/icon-192.png",
+        "src": "./assets/img/icon-192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/assets/img/icon-512.png",
+        "src": "./assets/img/icon-512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
@@ -25,13 +25,13 @@
     ],
     "screenshots": [
       {
-        "src": "/assets/img/Screenshot_1.png",
+        "src": "./assets/img/Screenshot_1.png",
         "type": "image/png",
         "sizes": "831x500",
         "form_factor": "wide"
       },
       {
-        "src": "/assets/img/Screenshot_2.png",
+        "src": "./assets/img/Screenshot_2.png",
         "type": "image/png",
         "sizes": "287x608",
         "form_factor": "wide"
