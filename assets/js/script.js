@@ -177,7 +177,14 @@ if(!localStorage.getItem("days")){
                         <option></option>
                         <option>সাপ্তাহিক সভা</option>
                         <option>রিপোর্ট প্রদান</option>
+                        <option>অফিসে কাজ</option>
+                        <option>সরকারি ছুটি</option>
                         <option>উ:মো:পুর</option>
+                        <option>দোঘর</option>
+                        <option>মলয়</option>
+                        <option>লক্ষিপুর</option>
+                        <option>শায়েস্তানগর CC</option>
+                        <option>HA দের সাথে মাসিক সভা</option>
                         <option>CHCP দের সাথে মাসিক সভা</option>
                         <option>শায়েস্তানগর CC পরিদর্শন</option>
                         <option>পিপিয়াকান্দি CC পরিদর্শন</option>
@@ -193,10 +200,15 @@ if(!localStorage.getItem("days")){
                     <select>
                         <option></option>
                         <option>UHC</option>
+                        <option>IPC</option>
                         <option>FWC</option>
-                        <option>ডা সিরাজুল ইসলামের বাড়ি</option>
-                        <option>জাকির ভূইয়ার বাড়ি</option>
-                        <option>বিরেন্দ্র বর্মনের বাড়ি</option>
+                        <option>EPI</option>
+                        <option>EPI ডা সিরাজুল ইসলামের বাড়ী</option>
+                        <option>EPI বিরেন্দ্র বর্মনের বাড়ী</option>
+                        <option>EPI জাকির ভূইয়ার বাড়ী</option>
+                        <option>EPI খোরশেদ ভূইয়ার বাড়ী</option>
+                        <option>EPI বিল্লাল ভূইয়ার বাড়ী</option>
+                        <option>EPI মোস্তফা মোল্লার বাড়ী</option>
                     </select>
                 </div>
             </div>
@@ -241,6 +253,14 @@ if(!localStorage.getItem("days")){
 jSuites.calendar(document.getElementById('calendar'), {
     type: 'year-month-picker',
     format: 'MMM-YYYY',
+});
+
+// Onclick Overlay hide Dialog
+document.querySelector(".overlay").addEventListener("click", function(){
+    if(!this.classList.contains("show") || document.querySelector(".dialog_new_project_details").classList.contains("dialog-open")) return;
+    this.classList.remove("show");
+    document.querySelector(".dialog_project_create").classList.remove("dialog-open");
+    document.querySelector(".sticky_options_wrapper").classList.remove("show");
 });
 
 // Sticky Option Choose
@@ -363,7 +383,20 @@ document.querySelector(".signatureField").addEventListener("keyup", function(){
     localStorage.setItem("signatureDate", this.value);
 });
 
+// Fill Data OnPaste Value
+document.querySelectorAll(".date_section .field").forEach(el=>{
+    el.addEventListener("paste", function(){
+        setTimeout(()=>{
+            el.dispatchEvent(new Event("keyup"));
+        }, 50);
+    });
 
+    el.addEventListener("cut", function(){
+        setTimeout(()=>{
+            el.dispatchEvent(new Event("keyup"));
+        }, 50);
+    });
+});
 
 // Fill Data from Dropdown Option
 document.querySelectorAll(".date_section select").forEach(el=>{
