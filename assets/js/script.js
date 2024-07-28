@@ -174,22 +174,30 @@ if(!localStorage.getItem("days")){
                 <div class="d-flex align-center">
                     <input type="text" class="field" value="${daysData[3]}" data-target-index="4"/>
                     <select>
-                        <option></option>
-                        <option>সাপ্তাহিক সভা</option>
-                        <option>রিপোর্ট প্রদান</option>
-                        <option>অফিসে কাজ</option>
-                        <option>সরকারি ছুটি</option>
-                        <option>উ:মো:পুর</option>
-                        <option>দোঘর</option>
-                        <option>মলয়</option>
-                        <option>লক্ষিপুর</option>
-                        <option>শায়েস্তানগর CC</option>
-                        <option>HA দের সাথে মাসিক সভা</option>
-                        <option>CHCP দের সাথে মাসিক সভা</option>
-                        <option>শায়েস্তানগর CC পরিদর্শন</option>
-                        <option>পিপিয়াকান্দি CC পরিদর্শন</option>
-                        <option>শায়েস্তানগর CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
-                        <option>পিপিয়াকান্দি CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
+                        <optgroup label="">
+                            <option></option>
+                            <option>সাপ্তাহিক সভা</option>
+                            <option>রিপোর্ট প্রদান</option>
+                            <option>অফিসে কাজ</option>
+                            <option>সরকারি ছুটি</option>
+                        </optgroup>
+                        <optgroup label="">
+                            <option>উ:মো:পুর</option>
+                            <option>দোঘর</option>
+                            <option>মলয়</option>
+                            <option>লক্ষিপুর</option>
+                            <option>শায়েস্তানগর CC</option>
+                        </optgroup>
+                        <optgroup label="">
+                            <option>HA দের সাথে মাসিক সভা</option>
+                            <option>CHCP দের সাথে মাসিক সভা</option>
+                        </optgroup>
+                        <optgroup label="">
+                            <option>শায়েস্তানগর CC পরিদর্শন</option>
+                            <option>পিপিয়াকান্দি CC পরিদর্শন</option>
+                            <option>শায়েস্তানগর CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
+                            <option>পিপিয়াকান্দি CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
+                        </optgroup>
                     </select>
                 </div>
             </div>
@@ -198,17 +206,21 @@ if(!localStorage.getItem("days")){
                 <div class="d-flex align-center">
                     <input type="text" class="field" value="${daysData[4]}" data-target-index="5"/>
                     <select>
-                        <option></option>
-                        <option>UHC</option>
-                        <option>IPC</option>
-                        <option>FWC</option>
-                        <option>EPI</option>
-                        <option>EPI ডা সিরাজুল ইসলামের বাড়ী</option>
-                        <option>EPI বিরেন্দ্র বর্মনের বাড়ী</option>
-                        <option>EPI জাকির ভূইয়ার বাড়ী</option>
-                        <option>EPI খোরশেদ ভূইয়ার বাড়ী</option>
-                        <option>EPI বিল্লাল ভূইয়ার বাড়ী</option>
-                        <option>EPI মোস্তফা মোল্লার বাড়ী</option>
+                        <optgroup label="">
+                            <option></option>
+                            <option>UHC</option>
+                            <option>IPC</option>
+                            <option>FWC</option>
+                        </optgroup>                        
+                        <optgroup label="">
+                            <option>EPI</option>
+                            <option>EPI ডা সিরাজুল ইসলামের বাড়ী</option>
+                            <option>EPI বিরেন্দ্র বর্মনের বাড়ী</option>
+                            <option>EPI জাকির ভূইয়ার বাড়ী</option>
+                            <option>EPI খোরশেদ ভূইয়ার বাড়ী</option>
+                            <option>EPI বিল্লাল ভূইয়ার বাড়ী</option>
+                            <option>EPI মোস্তফা মোল্লার বাড়ী</option>
+                        </optgroup>
                     </select>
                 </div>
             </div>
