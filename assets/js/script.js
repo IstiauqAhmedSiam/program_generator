@@ -155,6 +155,7 @@ if(!localStorage.getItem("days")){
                     <select>
                         <option></option>
                         <option>মোঃপুর</option>
+                        <option>মালীগাঁও</option>
                     </select>
                 </div>
             </div>
@@ -165,6 +166,7 @@ if(!localStorage.getItem("days")){
                     <select>
                         <option></option>
                         <option>১</option>
+                        <option>২</option>
                         <option>৩</option>
                     </select>
                 </div>
@@ -195,8 +197,14 @@ if(!localStorage.getItem("days")){
                         <optgroup label="">
                             <option>শায়েস্তানগর CC পরিদর্শন</option>
                             <option>পিপিয়াকান্দি CC পরিদর্শন</option>
+                            <option>মালী গাঁও CC পরিদর্শন</option>
+                            <option>চাঁপাতলী CC পরিদর্শন</option>
+                            <option>উঃ বায়নগর CC পরিদর্শন</option>
                             <option>শায়েস্তানগর CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
                             <option>পিপিয়াকান্দি CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
+                            <option>মালী গাঁও CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
+                            <option>চাঁপাতলী CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
+                            <option>উঃ বায়নগর CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
                         </optgroup>
                     </select>
                 </div>
