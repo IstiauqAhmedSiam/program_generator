@@ -197,12 +197,14 @@ if(!localStorage.getItem("days")){
                         <optgroup label="">
                             <option>শায়েস্তানগর CC পরিদর্শন</option>
                             <option>পিপিয়াকান্দি CC পরিদর্শন</option>
-                            <option>মালী গাঁও CC পরিদর্শন</option>
+                            <option>মালীগাঁও CC পরিদর্শন</option>
                             <option>চাঁপাতলী CC পরিদর্শন</option>
                             <option>উঃ বায়নগর CC পরিদর্শন</option>
+                        </optgroup>
+                        <optgroup label="">
                             <option>শায়েস্তানগর CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
                             <option>পিপিয়াকান্দি CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
-                            <option>মালী গাঁও CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
+                            <option>মালীগাঁও CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
                             <option>চাঁপাতলী CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
                             <option>উঃ বায়নগর CC তে কমিউনিটি গ্রুপের মাসিক সভা পরিদর্শন</option>
                         </optgroup>
@@ -219,6 +221,7 @@ if(!localStorage.getItem("days")){
                             <option>UHC</option>
                             <option>IPC</option>
                             <option>FWC</option>
+                            <option>উঠান বৈঠক</option>
                         </optgroup>                        
                         <optgroup label="">
                             <option>EPI</option>
